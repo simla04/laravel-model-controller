@@ -7,10 +7,12 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller {
 
-    public function index(){
+    public function index() {
 
         $movies = Movie::All();
 
         return view('home', compact('movies'));
     }
+    
+
 }
